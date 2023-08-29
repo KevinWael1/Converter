@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Converter.css">
+    <script src="Converter.js"></script>
+    <title>Converter</title>
+</head>
+<body>
+    <div class="Fahrenheit to Celsius">
+        <h1>Temperature Converter</h1>
+        <p>Put a value in Fahrenheit to convert it to Celsius:</p>
+
+        <p>
+        <label>Fahrenheit</label>
+        <input type="number" name="" id="Num" placeholder="Type Fahrenheit Number" oninput="Converter(this.value)" onchange="Converter(this.value)">
+    </p>
+    <p>Celsius: <span id="Output"></span></p>
+    </div>
+    <hr style="margin-left: 50px; margin-right: 50px;">
+    <div class="Celsius to Fahrenheit">
+        <h1>Temperature Converter</h1>
+        <p>Put a value in Celsius to convert it to Fahrenheit:</p>
+
+        <p>
+        <label>Celsius</label>
+        <input type="number" name="" id="Num" placeholder="Type Celsius Number" oninput="Converter2(this.value)" onchange="Converter2(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="Output2"></span></p>
+    </div>
+    <hr style="margin-left: 50px; margin-right: 50px;">
+
+    <div class="js_name">
+        <h1 id="name"></h1>
+        <div class="buttons" style="margin-left: 50px;">
+            <button onclick="document.getElementById('name').style.display = 'none'; ">Hide</button>
+        <button onclick="document.getElementById('name').style.display = 'block'; ">Show</button>
+        <button onclick="document.getElementById('name').innerHTML = 'Go to sleep 🤣😂' ">Change Text</button>
+        <button onclick="document.getElementById('name').innerHTML = 'Kevin Wael' ">Return Text</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("name").innerHTML = "Kevin Wael";
+    </script>
+</body>
+</html>
